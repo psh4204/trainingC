@@ -1,5 +1,5 @@
-#include <stdio.h>
-//#include "myFunc.c"
+#include <stdio.h> // <>는 스탠다드
+#include "myFunc.h" //""는 내가만든것_ 사실 <>써도 됨
 
 #define TEST8
 
@@ -239,8 +239,8 @@ void func(void)
 */
 
 
-extern int a; // extern뜻 밖에 있을거야 !! 라는 뜻 
-void func(void); // 함수는 extern 이 자동으로 됨.
+//extern int a; // extern뜻 밖에 있을거야 !! 라는 뜻 
+//void func(void); // 함수는 extern 이 자동으로 됨.
 
 int main()
 {

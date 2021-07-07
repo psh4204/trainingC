@@ -1,6 +1,7 @@
 #include <stdio.h>
+#include "myFunc.h"
 
-int a = 0; // 전역변수
+//int a = 0; // 전역변수
 
 void func(void)
 {
