@@ -244,6 +244,9 @@ extern int a; // extern뜻 밖에 있을거야 !! 라는 뜻
 
 int main()
 {
+    double res;
+    int ret;
+    
     printf("[[ main.c START ]]\n\n",a);
     
     int i;
@@ -257,8 +260,18 @@ int main()
     
     printf("\nadd(3,4)\t: %0.2f\n", add(3,4));
     printf("\nsub(3,4)\t: %0.2f\n", sub(3,4));
-    printf("\ndiv(3,4)\t: %0.2f\n", div(3,4));
-    printf("\nmlt(3,4)\t: %0.2f\n", multiply(3,4));
+    
+    
+    res = div(3,4);
+    if(res > 100000) printf("error\n");
+    else printf("\ndiv(3,4)\t: %0.2f\n", div(3,4));
+    
+    ret = div2(3,4, &res);
+    if(ret != 0) printf("error\n");
+    else printf("\ndiv2(3,4)\t: %0.2f\n", div(3,4));
+    
+    
+    printf("\nmlt(3,4)\t: %0.2f\n", mltp(3,4));
     return 0;
 }
 

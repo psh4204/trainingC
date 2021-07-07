@@ -29,11 +29,18 @@ double sub(double a1, double a2)
 double div(double a1, double a2)
 {
     double res;
-    res = a1 * a2;
+    res = a1 / a2;
     return res;
 }
 
-double multiply(double a1, double a2)
+double div2(double a1, double a2, double *res)
+{
+    if(a2 == 0) return -1;
+    *res = a1/a2;
+    return 0;
+}
+
+double mltp(double a1, double a2)
 {
     double res;
     

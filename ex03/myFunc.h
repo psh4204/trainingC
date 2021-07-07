@@ -9,7 +9,8 @@ void func();
 double add(double, double);
 double sub(double a1, double a2);
 double div(double a1, double a2);
-double multiply(double a1, double a2);
+double div2(double a1, double a2, double * res);
+double mltp(double a1, double a2);
 
 #ifdef __cplusplus // 네임 맹글링 : C++에서 C코드를 C코드로 쓸수있게 하는 것 }
 }
