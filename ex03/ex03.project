@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeLite_Project Name="trainingC" Version="11000" InternalType="Console">
+  <VirtualDirectory Name="inc">
+    <File Name="myFunc.h"/>
+  </VirtualDirectory>
   <Description/>
   <Dependencies/>
   <Settings Type="Executable">
@@ -93,6 +96,7 @@
     </Configuration>
   </Settings>
   <VirtualDirectory Name="src">
+    <File Name="myFunc.c"/>
     <File Name="main.c"/>
   </VirtualDirectory>
 </CodeLite_Project>

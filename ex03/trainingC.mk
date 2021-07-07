@@ -62,7 +62,7 @@ AS       := C:/MinGW/bin/as.exe
 ## User defined environment variables
 ##
 CodeLiteDir:=C:\Program Files\CodeLite
-Objects0=$(IntermediateDirectory)/main.c$(ObjectSuffix) 
+Objects0=$(IntermediateDirectory)/myFunc.c$(ObjectSuffix) $(IntermediateDirectory)/main.c$(ObjectSuffix) 
 
 
 
@@ -93,6 +93,12 @@ PreBuild:
 ##
 ## Objects
 ##
+$(IntermediateDirectory)/myFunc.c$(ObjectSuffix): myFunc.c
+	@$(CC) $(CFLAGS) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/myFunc.c$(ObjectSuffix) -MF$(IntermediateDirectory)/myFunc.c$(DependSuffix) -MM myFunc.c
+	$(CC) $(SourceSwitch) "C:/Users/user/Documents/Workspace/example01/ex03/myFunc.c" $(CFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/myFunc.c$(ObjectSuffix) $(IncludePath)
+$(IntermediateDirectory)/myFunc.c$(PreprocessSuffix): myFunc.c
+	$(CC) $(CFLAGS) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/myFunc.c$(PreprocessSuffix) myFunc.c
+
 $(IntermediateDirectory)/main.c$(ObjectSuffix): main.c
 	@$(CC) $(CFLAGS) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/main.c$(ObjectSuffix) -MF$(IntermediateDirectory)/main.c$(DependSuffix) -MM main.c
 	$(CC) $(SourceSwitch) "C:/Users/user/Documents/Workspace/example01/ex03/main.c" $(CFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/main.c$(ObjectSuffix) $(IncludePath)

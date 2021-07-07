@@ -1,6 +1,7 @@
 #include <stdio.h>
+//#include "myFunc.c"
 
-#define TEST7
+#define TEST8
 
 #ifdef TEST1
 /*
@@ -212,6 +213,45 @@ int main()
     // printf("Circle Center Point\t: {%d, %d}\n", (*pC).x, (*pC).y);
     printf("Circle Center Point\t: {%d, %d}\n", pC->x, pC->y); // (*a).b = a->b
     printf("Circle radius\t\t: %f\n\n", c1.radius);
+    
+    return 0;
+}
+
+#endif
+
+
+#ifdef TEST8
+/*
+ * 키워드 : 전역변수, 지역변수, static, extern, 헤더파일
+ * 내용 : static 변수는 프로그램의 시작과 끝을 함께하는 변수이다. 
+*/
+/*
+int a = 0; // 전역변수 
+
+void func(void)
+{
+    //int a = 2;// 지역변수 : 이 함수내에서만 살아있음.
+    static int a = 2; // static 변수 : 프로그램이 꺼질때 까지 살아있음.
+    a++;
+    
+    printf("(local) : %d\n",a);
+}
+*/
+
+
+extern int a; // extern뜻 밖에 있을거야 !! 라는 뜻 
+void func(void); // 함수는 extern 이 자동으로 됨.
+
+int main()
+{
+    int i;
+    
+    for(i=0; i<10;i++)
+    {
+        func();
+    }
+    
+    printf("\n\n[local] : %d\n",a);
     
     return 0;
 }
