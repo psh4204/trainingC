@@ -147,7 +147,7 @@ typedef struct _point{
     char b;
     int y;  //y좌표
 }Point_a;
-#pragma pop() // 이구조체는 여기까지.
+#pragma(pop) // 이구조체는 여기까지.
 
 #pragma pack(push, 2) //이 구조체의 변수의 시작크기는 n이 된다.
 typedef struct _point2{
@@ -156,7 +156,7 @@ typedef struct _point2{
     int y;  //y좌표
     char b;
 }Point_b;
-#pragma pop() // 이구조체는 여기까지.
+#pragma(pop) // 이구조체는 여기까지.
 
 int main()
 {
