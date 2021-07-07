@@ -222,7 +222,7 @@ int main()
 
 #ifdef TEST8
 /*
- * 키워드 : 전역변수, 지역변수, static, extern, 헤더파일
+ * 키워드 : 전역변수, 지역변수, static, extern, 헤더파일, 네임 맹글링
  * 내용 : static 변수는 프로그램의 시작과 끝을 함께하는 변수이다. 
 */
 /*
@@ -239,11 +239,13 @@ void func(void)
 */
 
 
-//extern int a; // extern뜻 밖에 있을거야 !! 라는 뜻 
+extern int a; // extern뜻 밖에 있을거야 !! 라는 뜻 
 //void func(void); // 함수는 extern 이 자동으로 됨.
 
 int main()
 {
+    printf("[[ main.c START ]]\n\n",a);
+    
     int i;
     
     for(i=0; i<10;i++)
@@ -251,8 +253,12 @@ int main()
         func();
     }
     
-    printf("\n\n[local] : %d\n",a);
+    printf("\n\n[extern_local]\t: %d\n",a);
     
+    printf("\nadd(3,4)\t: %0.2f\n", add(3,4));
+    printf("\nsub(3,4)\t: %0.2f\n", sub(3,4));
+    printf("\ndiv(3,4)\t: %0.2f\n", div(3,4));
+    printf("\nmlt(3,4)\t: %0.2f\n", multiply(3,4));
     return 0;
 }
 
