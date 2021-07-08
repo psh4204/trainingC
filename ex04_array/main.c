@@ -1,5 +1,9 @@
 #include <stdio.h>
 
+#define TEST1
+
+#ifdef TEST1
+
 int main(int argc, char **argv)
 {
 	int a[] = {8,2,8,1,3};
@@ -28,3 +32,13 @@ int main(int argc, char **argv)
     
 	return 0;
 }
+
+#endif
+
+
+#ifdef TEST2
+
+
+
+
+#endif

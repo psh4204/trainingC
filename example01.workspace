@@ -3,7 +3,8 @@
   <Project Name="ex01" Path="e01/e01.project" Active="No"/>
   <Project Name="ex02" Path="ex02/ex02.project" Active="No"/>
   <Project Name="ex03" Path="ex03/ex03.project" Active="No"/>
-  <Project Name="ex04_array" Path="ex04_array/ex04_array.project" Active="Yes"/>
+  <Project Name="ex04_array" Path="ex04_array/ex04_array.project" Active="No"/>
+  <Project Name="ex05" Path="ex05/ex05.project" Active="Yes"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug" Selected="yes">
       <Environment/>
@@ -11,6 +12,7 @@
       <Project Name="ex02" ConfigName="Debug"/>
       <Project Name="ex03" ConfigName="Debug"/>
       <Project Name="ex04_array" ConfigName="Debug"/>
+      <Project Name="ex05" ConfigName="Debug"/>
     </WorkspaceConfiguration>
     <WorkspaceConfiguration Name="Release" Selected="yes">
       <Environment/>
@@ -18,6 +20,7 @@
       <Project Name="ex02" ConfigName="Release"/>
       <Project Name="ex03" ConfigName="Release"/>
       <Project Name="ex04_array" ConfigName="Release"/>
+      <Project Name="ex05" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix>
 </CodeLite_Workspace>

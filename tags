@@ -1,1 +1,109 @@
-main	C:\Users\user\Documents\Workspace\example01\ex04_array\main.c	/^int main(int argc, char **argv)$/;"	function	line:3	signature:(int argc, char **argv)	returns:int 
+__need_time_h	c:\MinGW\include\time.h	/^#undef __need_time_h$/;"	macro	line:43
+__need_time_t	c:\MinGW\include\time.h	/^#define __need_time_t  1$/;"	macro	line:44
+__need_struct_timespec	c:\MinGW\include\time.h	/^#undef __need_struct_timespec$/;"	macro	line:52
+__need_wchar_decls	c:\MinGW\include\time.h	/^#undef __need_wchar_decls$/;"	macro	line:53
+__need_struct_timespec	c:\MinGW\include\time.h	/^# define __need_struct_timespec  1$/;"	macro	line:66
+__need_wchar_decls	c:\MinGW\include\time.h	/^# define __need_wchar_decls  1$/;"	macro	line:73
+_TIME_H	c:\MinGW\include\time.h	/^#define _TIME_H$/;"	macro	line:83
+CLOCKS_PER_SEC	c:\MinGW\include\time.h	/^#define CLOCKS_PER_SEC	((clock_t)(1000))$/;"	macro	line:94
+CLK_TCK	c:\MinGW\include\time.h	/^#define CLK_TCK 	CLOCKS_PER_SEC$/;"	macro	line:95
+__need_struct_timespec	c:\MinGW\include\time.h	/^#define __need_struct_timespec  1$/;"	macro	line:97
+__need_wchar_decls	c:\MinGW\include\time.h	/^#define __need_wchar_decls  1$/;"	macro	line:98
+timespec	c:\MinGW\include\time.h	/^struct timespec$/;"	struct	line:115
+tv_sec	c:\MinGW\include\time.h	/^  __time64_t	  tv_sec;	\/* seconds; accept 32 or 64 bits *\/$/;"	member	line:124	struct:timespec	access:public
+tv_nsec	c:\MinGW\include\time.h	/^  __int32  	  tv_nsec;	\/* nanoseconds *\/$/;"	member	line:125	struct:timespec	access:public
+__mingw32_expanded_timespec	c:\MinGW\include\time.h	/^struct __mingw32_expanded_timespec$/;"	struct	line:129
+__tv64_sec	c:\MinGW\include\time.h	/^    __time64_t	__tv64_sec;	\/* unambiguously 64 bits *\/$/;"	member	line:141	union:__mingw32_expanded_timespec::__anon1	access:public
+__tv32_sec	c:\MinGW\include\time.h	/^    __time32_t	__tv32_sec;	\/* unambiguously 32 bits *\/$/;"	member	line:142	union:__mingw32_expanded_timespec::__anon1	access:public
+tv_sec	c:\MinGW\include\time.h	/^    time_t	  tv_sec;	\/* ambiguously 32 or 64 bits *\/$/;"	member	line:143	union:__mingw32_expanded_timespec::__anon1	access:public
+tv_nsec	c:\MinGW\include\time.h	/^  __int32  	  tv_nsec;	\/* nanoseconds *\/$/;"	member	line:145	struct:__mingw32_expanded_timespec	access:public
+__struct_timespec_defined	c:\MinGW\include\time.h	/^# define __struct_timespec_defined  1$/;"	macro	line:149
+mingw_timespec	c:\MinGW\include\time.h	/^struct __mingw32_expanded_timespec *mingw_timespec( struct timespec *__tv )$/;"	function	line:165	signature:( struct timespec *__tv )	returns:struct __mingw32_expanded_timespec 
+__need_NULL	c:\MinGW\include\time.h	/^#define __need_NULL$/;"	macro	line:175
+__need_wchar_t	c:\MinGW\include\time.h	/^#define __need_wchar_t$/;"	macro	line:176
+__need_size_t	c:\MinGW\include\time.h	/^#define __need_size_t$/;"	macro	line:177
+clock_t	c:\MinGW\include\time.h	/^typedef long clock_t; $/;"	typedef	line:183
+tm	c:\MinGW\include\time.h	/^struct tm$/;"	struct	line:185
+tm_sec	c:\MinGW\include\time.h	/^  int  tm_sec;  	\/* Seconds: 0-60 (to accommodate leap seconds) *\/$/;"	member	line:191	struct:tm	access:public
+tm_min	c:\MinGW\include\time.h	/^  int  tm_min;  	\/* Minutes: 0-59 *\/$/;"	member	line:192	struct:tm	access:public
+tm_hour	c:\MinGW\include\time.h	/^  int  tm_hour; 	\/* Hours since midnight: 0-23 *\/$/;"	member	line:193	struct:tm	access:public
+tm_mday	c:\MinGW\include\time.h	/^  int  tm_mday; 	\/* Day of the month: 1-31 *\/$/;"	member	line:194	struct:tm	access:public
+tm_mon	c:\MinGW\include\time.h	/^  int  tm_mon;  	\/* Months *since* January: 0-11 *\/$/;"	member	line:195	struct:tm	access:public
+tm_year	c:\MinGW\include\time.h	/^  int  tm_year; 	\/* Years since 1900 *\/$/;"	member	line:196	struct:tm	access:public
+tm_wday	c:\MinGW\include\time.h	/^  int  tm_wday; 	\/* Days since Sunday (0-6) *\/$/;"	member	line:197	struct:tm	access:public
+tm_yday	c:\MinGW\include\time.h	/^  int  tm_yday; 	\/* Days since Jan. 1: 0-365 *\/$/;"	member	line:198	struct:tm	access:public
+tm_isdst	c:\MinGW\include\time.h	/^  int  tm_isdst;	\/* +1=Daylight Savings Time, 0=No DST, -1=unknown *\/$/;"	member	line:199	struct:tm	access:public
+clock	c:\MinGW\include\time.h	/^_CRTIMP __cdecl __MINGW_NOTHROW  clock_t  clock (void);$/;"	prototype	line:204	signature:(void)	returns:_BEGIN_C_DECLS _CRTIMP __cdecl __MINGW_NOTHROW clock_t 
+time	c:\MinGW\include\time.h	/^_CRTIMP __cdecl __MINGW_NOTHROW  time_t time (time_t *);$/;"	prototype	line:214	signature:(time_t *)	returns:_CRTIMP __cdecl __MINGW_NOTHROW time_t 
+difftime	c:\MinGW\include\time.h	/^_CRTIMP __cdecl __MINGW_NOTHROW  double difftime (time_t, time_t);$/;"	prototype	line:215	signature:(time_t, time_t)	returns:_CRTIMP __cdecl __MINGW_NOTHROW double 
+mktime	c:\MinGW\include\time.h	/^_CRTIMP __cdecl __MINGW_NOTHROW  time_t mktime (struct tm *);$/;"	prototype	line:216	signature:(struct tm *)	returns:_CRTIMP __cdecl __MINGW_NOTHROW time_t 
+asctime	c:\MinGW\include\time.h	/^_CRTIMP __cdecl __MINGW_NOTHROW  char *asctime (const struct tm *);$/;"	prototype	line:228	signature:(const struct tm *)	returns:_CRTIMP __cdecl __MINGW_NOTHROW char 
+ctime	c:\MinGW\include\time.h	/^_CRTIMP __cdecl __MINGW_NOTHROW  char *ctime (const time_t *);$/;"	prototype	line:234	signature:(const time_t *)	returns:_CRTIMP __cdecl __MINGW_NOTHROW char 
+gmtime	c:\MinGW\include\time.h	/^_CRTIMP __cdecl __MINGW_NOTHROW  struct tm *gmtime (const time_t *);$/;"	prototype	line:235	signature:(const time_t *)	returns:_CRTIMP __cdecl __MINGW_NOTHROW struct tm 
+localtime	c:\MinGW\include\time.h	/^_CRTIMP __cdecl __MINGW_NOTHROW  struct tm *localtime (const time_t *);$/;"	prototype	line:236	signature:(const time_t *)	returns:_CRTIMP __cdecl __MINGW_NOTHROW struct tm 
+strftime	c:\MinGW\include\time.h	/^size_t strftime (char *, size_t, const char *, const struct tm *);$/;"	prototype	line:240	signature:(char *, size_t, const char *, const struct tm *)	returns:_CRTIMP __cdecl __MINGW_NOTHROW size_t 
+_tzset	c:\MinGW\include\time.h	/^extern _CRTIMP __cdecl __MINGW_NOTHROW  void _tzset (void);$/;"	prototype	line:243	signature:(void)	returns:_CRTIMP __cdecl __MINGW_NOTHROW void 
+tzset	c:\MinGW\include\time.h	/^extern _CRTIMP __cdecl __MINGW_NOTHROW  void tzset (void);$/;"	prototype	line:246	signature:(void)	returns:_CRTIMP __cdecl __MINGW_NOTHROW void 
+_strdate	c:\MinGW\include\time.h	/^_CRTIMP __cdecl __MINGW_NOTHROW  char *_strdate (char *);$/;"	prototype	line:249	signature:(char *)	returns:_CRTIMP __cdecl __MINGW_NOTHROW char 
+_strtime	c:\MinGW\include\time.h	/^_CRTIMP __cdecl __MINGW_NOTHROW  char *_strtime (char *);$/;"	prototype	line:250	signature:(char *)	returns:_CRTIMP __cdecl __MINGW_NOTHROW char 
+_time64	c:\MinGW\include\time.h	/^_CRTIMP __cdecl __MINGW_NOTHROW  __time64_t _time64( __time64_t *);$/;"	prototype	line:257	signature:( __time64_t *)	returns:_CRTIMP __cdecl __MINGW_NOTHROW __time64_t 
+_mktime64	c:\MinGW\include\time.h	/^_CRTIMP __cdecl __MINGW_NOTHROW  __time64_t _mktime64 (struct tm *);$/;"	prototype	line:258	signature:(struct tm *)	returns:_CRTIMP __cdecl __MINGW_NOTHROW __time64_t 
+_ctime64	c:\MinGW\include\time.h	/^_CRTIMP __cdecl __MINGW_NOTHROW    char *_ctime64 (const __time64_t *);$/;"	prototype	line:259	signature:(const __time64_t *)	returns:_CRTIMP __cdecl __MINGW_NOTHROW char 
+_gmtime64	c:\MinGW\include\time.h	/^_CRTIMP __cdecl __MINGW_NOTHROW    struct tm *_gmtime64 (const __time64_t *);$/;"	prototype	line:260	signature:(const __time64_t *)	returns:_CRTIMP __cdecl __MINGW_NOTHROW struct tm 
+_localtime64	c:\MinGW\include\time.h	/^_CRTIMP __cdecl __MINGW_NOTHROW    struct tm *_localtime64 (const __time64_t *);$/;"	prototype	line:261	signature:(const __time64_t *)	returns:_CRTIMP __cdecl __MINGW_NOTHROW struct tm 
+_ctime32	c:\MinGW\include\time.h	/^_CRTIMP __cdecl __MINGW_NOTHROW    char *_ctime32 (const __time32_t *);$/;"	prototype	line:269	signature:(const __time32_t *)	returns:_CRTIMP __cdecl __MINGW_NOTHROW char 
+_difftime32	c:\MinGW\include\time.h	/^_CRTIMP __cdecl __MINGW_NOTHROW    double _difftime32 (__time32_t, __time32_t);$/;"	prototype	line:270	signature:(__time32_t, __time32_t)	returns:_CRTIMP __cdecl __MINGW_NOTHROW double 
+_difftime64	c:\MinGW\include\time.h	/^_CRTIMP __cdecl __MINGW_NOTHROW    double _difftime64 (__time64_t, __time64_t);$/;"	prototype	line:271	signature:(__time64_t, __time64_t)	returns:_CRTIMP __cdecl __MINGW_NOTHROW double 
+_gmtime32	c:\MinGW\include\time.h	/^_CRTIMP __cdecl __MINGW_NOTHROW    struct tm *_gmtime32 (const __time32_t *);$/;"	prototype	line:272	signature:(const __time32_t *)	returns:_CRTIMP __cdecl __MINGW_NOTHROW struct tm 
+_localtime32	c:\MinGW\include\time.h	/^_CRTIMP __cdecl __MINGW_NOTHROW    struct tm *_localtime32 (const __time32_t *);$/;"	prototype	line:273	signature:(const __time32_t *)	returns:_CRTIMP __cdecl __MINGW_NOTHROW struct tm 
+_mktime32	c:\MinGW\include\time.h	/^_CRTIMP __cdecl __MINGW_NOTHROW  __time32_t _mktime32 (struct tm *);$/;"	prototype	line:274	signature:(struct tm *)	returns:_CRTIMP __cdecl __MINGW_NOTHROW __time32_t 
+_mkgmtime32	c:\MinGW\include\time.h	/^_CRTIMP __cdecl __MINGW_NOTHROW  __time32_t _mkgmtime32 (struct tm *);$/;"	prototype	line:275	signature:(struct tm *)	returns:_CRTIMP __cdecl __MINGW_NOTHROW __time32_t 
+_mkgmtime64	c:\MinGW\include\time.h	/^_CRTIMP __cdecl __MINGW_NOTHROW  __time64_t _mkgmtime64 (struct tm *);$/;"	prototype	line:276	signature:(struct tm *)	returns:_CRTIMP __cdecl __MINGW_NOTHROW __time64_t 
+_time32	c:\MinGW\include\time.h	/^_CRTIMP __cdecl __MINGW_NOTHROW  __time32_t _time32 (__time32_t *);$/;"	prototype	line:277	signature:(__time32_t *)	returns:_CRTIMP __cdecl __MINGW_NOTHROW __time32_t 
+time	c:\MinGW\include\time.h	/^__CRT_ALIAS __cdecl __MINGW_NOTHROW  time_t time (time_t *__v)$/;"	function	line:286	signature:(time_t *__v)	returns:__CRT_ALIAS __cdecl __MINGW_NOTHROW time_t 
+difftime	c:\MinGW\include\time.h	/^__CRT_ALIAS __cdecl __MINGW_NOTHROW  double difftime (time_t __v1, time_t __v2)$/;"	function	line:289	signature:(time_t __v1, time_t __v2)	returns:__CRT_ALIAS __cdecl __MINGW_NOTHROW double 
+mktime	c:\MinGW\include\time.h	/^__CRT_ALIAS __cdecl __MINGW_NOTHROW  time_t mktime (struct tm *__v)$/;"	function	line:292	signature:(struct tm *__v)	returns:__CRT_ALIAS __cdecl __MINGW_NOTHROW time_t 
+_mkgmtime	c:\MinGW\include\time.h	/^__CRT_ALIAS __cdecl __MINGW_NOTHROW  time_t _mkgmtime (struct tm *__v)$/;"	function	line:295	signature:(struct tm *__v)	returns:__CRT_ALIAS __cdecl __MINGW_NOTHROW time_t 
+ctime	c:\MinGW\include\time.h	/^__CRT_ALIAS __cdecl __MINGW_NOTHROW  char *ctime (const time_t *__v)$/;"	function	line:298	signature:(const time_t *__v)	returns:__CRT_ALIAS __cdecl __MINGW_NOTHROW char 
+gmtime	c:\MinGW\include\time.h	/^__CRT_ALIAS __cdecl __MINGW_NOTHROW  struct tm *gmtime (const time_t *__v)$/;"	function	line:301	signature:(const time_t *__v)	returns:__CRT_ALIAS __cdecl __MINGW_NOTHROW struct tm 
+localtime	c:\MinGW\include\time.h	/^__CRT_ALIAS __cdecl __MINGW_NOTHROW  struct tm *localtime (const time_t *__v)$/;"	function	line:304	signature:(const time_t *__v)	returns:__CRT_ALIAS __cdecl __MINGW_NOTHROW struct tm 
+time	c:\MinGW\include\time.h	/^__CRT_ALIAS __cdecl __MINGW_NOTHROW  time_t time (time_t *__v)$/;"	function	line:312	signature:(time_t *__v)	returns:__CRT_ALIAS __cdecl __MINGW_NOTHROW time_t 
+difftime	c:\MinGW\include\time.h	/^__CRT_ALIAS __cdecl __MINGW_NOTHROW  double difftime (time_t __v1, time_t __v2)$/;"	function	line:315	signature:(time_t __v1, time_t __v2)	returns:__CRT_ALIAS __cdecl __MINGW_NOTHROW double 
+mktime	c:\MinGW\include\time.h	/^__CRT_ALIAS __cdecl __MINGW_NOTHROW  time_t mktime (struct tm *__v)$/;"	function	line:318	signature:(struct tm *__v)	returns:__CRT_ALIAS __cdecl __MINGW_NOTHROW time_t 
+_mkgmtime	c:\MinGW\include\time.h	/^__CRT_ALIAS __cdecl __MINGW_NOTHROW  time_t _mkgmtime (struct tm *__v)$/;"	function	line:321	signature:(struct tm *__v)	returns:__CRT_ALIAS __cdecl __MINGW_NOTHROW time_t 
+ctime	c:\MinGW\include\time.h	/^__CRT_ALIAS __cdecl __MINGW_NOTHROW  char *ctime (const time_t *__v)$/;"	function	line:324	signature:(const time_t *__v)	returns:__CRT_ALIAS __cdecl __MINGW_NOTHROW char 
+gmtime	c:\MinGW\include\time.h	/^__CRT_ALIAS __cdecl __MINGW_NOTHROW  struct tm *gmtime (const time_t *__v)$/;"	function	line:327	signature:(const time_t *__v)	returns:__CRT_ALIAS __cdecl __MINGW_NOTHROW struct tm 
+localtime	c:\MinGW\include\time.h	/^__CRT_ALIAS __cdecl __MINGW_NOTHROW  struct tm *localtime (const time_t *__v)$/;"	function	line:330	signature:(const time_t *__v)	returns:__CRT_ALIAS __cdecl __MINGW_NOTHROW struct tm 
+__p__daylight	c:\MinGW\include\time.h	/^extern _CRTIMP __cdecl __MINGW_NOTHROW  int   *__p__daylight (void);$/;"	prototype	line:344	signature:(void)	returns:_CRTIMP __cdecl __MINGW_NOTHROW int 
+__p__timezone	c:\MinGW\include\time.h	/^extern _CRTIMP __cdecl __MINGW_NOTHROW  long  *__p__timezone (void);$/;"	prototype	line:345	signature:(void)	returns:_CRTIMP __cdecl __MINGW_NOTHROW long 
+__p__tzname	c:\MinGW\include\time.h	/^extern _CRTIMP __cdecl __MINGW_NOTHROW  char **__p__tzname (void);$/;"	prototype	line:346	signature:(void)	returns:_CRTIMP __cdecl __MINGW_NOTHROW char 
+_daylight	c:\MinGW\include\time.h	/^__MINGW_IMPORT int   _daylight;$/;"	variable	line:348
+_timezone	c:\MinGW\include\time.h	/^__MINGW_IMPORT long  _timezone;$/;"	variable	line:349
+_tzname	c:\MinGW\include\time.h	/^__MINGW_IMPORT char *_tzname[2];$/;"	variable	line:350
+_daylight	c:\MinGW\include\time.h	/^#define _daylight  (*_imp___daylight_dll)$/;"	macro	line:359
+_timezone	c:\MinGW\include\time.h	/^#define _timezone  (*_imp___timezone_dll)$/;"	macro	line:360
+_tzname	c:\MinGW\include\time.h	/^#define _tzname	   (*_imp___tzname)$/;"	macro	line:361
+_daylight_dll	c:\MinGW\include\time.h	/^__MINGW_IMPORT int   _daylight_dll;$/;"	variable	line:365
+_timezone_dll	c:\MinGW\include\time.h	/^__MINGW_IMPORT long  _timezone_dll;$/;"	variable	line:366
+_tzname	c:\MinGW\include\time.h	/^__MINGW_IMPORT char *_tzname[2];$/;"	variable	line:367
+_daylight	c:\MinGW\include\time.h	/^#define _daylight  _daylight_dll$/;"	macro	line:369
+_timezone	c:\MinGW\include\time.h	/^#define _timezone  _timezone_dll$/;"	macro	line:370
+daylight	c:\MinGW\include\time.h	/^__MINGW_IMPORT int   daylight;$/;"	variable	line:381
+timezone	c:\MinGW\include\time.h	/^__MINGW_IMPORT long  timezone;$/;"	variable	line:382
+tzname	c:\MinGW\include\time.h	/^__MINGW_IMPORT char *tzname[2];$/;"	variable	line:383
+daylight	c:\MinGW\include\time.h	/^#define daylight  _daylight$/;"	macro	line:390
+tzname	c:\MinGW\include\time.h	/^__MINGW_IMPORT char 	*tzname[2];$/;"	variable	line:396
+nanosleep	c:\MinGW\include\time.h	/^int nanosleep( const struct timespec *, struct timespec * );$/;"	prototype	line:408	signature:( const struct timespec *, struct timespec * )	returns:__cdecl __MINGW_NOTHROW int 
+__mingw_sleep	c:\MinGW\include\time.h	/^int __mingw_sleep( unsigned long, unsigned long );$/;"	prototype	line:415	signature:( unsigned long, unsigned long )	returns:__cdecl __MINGW_NOTHROW int 
+nanosleep	c:\MinGW\include\time.h	/^int nanosleep( const struct timespec *period, struct timespec *residual )$/;"	function	line:418	signature:( const struct timespec *period, struct timespec *residual )	returns:int 
+_wasctime	c:\MinGW\include\time.h	/^_CRTIMP __cdecl __MINGW_NOTHROW  wchar_t *_wasctime (const struct tm *);$/;"	prototype	line:443	signature:(const struct tm *)	returns:_END_C_DECLS _BEGIN_C_DECLS _CRTIMP __cdecl __MINGW_NOTHROW wchar_t 
+_wstrdate	c:\MinGW\include\time.h	/^_CRTIMP __cdecl __MINGW_NOTHROW  wchar_t *_wstrdate (wchar_t *);$/;"	prototype	line:444	signature:(wchar_t *)	returns:_CRTIMP __cdecl __MINGW_NOTHROW wchar_t 
+_wstrtime	c:\MinGW\include\time.h	/^_CRTIMP __cdecl __MINGW_NOTHROW  wchar_t *_wstrtime (wchar_t *);$/;"	prototype	line:445	signature:(wchar_t *)	returns:_CRTIMP __cdecl __MINGW_NOTHROW wchar_t 
+_wctime64	c:\MinGW\include\time.h	/^_CRTIMP __cdecl __MINGW_NOTHROW  wchar_t *_wctime64 (const __time64_t *);$/;"	prototype	line:452	signature:(const __time64_t *)	returns:_CRTIMP __cdecl __MINGW_NOTHROW wchar_t 
+_wctime32	c:\MinGW\include\time.h	/^_CRTIMP __cdecl __MINGW_NOTHROW  wchar_t *_wctime32 (const __time32_t *);$/;"	prototype	line:459	signature:(const __time32_t *)	returns:_CRTIMP __cdecl __MINGW_NOTHROW wchar_t 
+_wctime	c:\MinGW\include\time.h	/^_CRTIMP __cdecl __MINGW_NOTHROW  wchar_t *_wctime (const time_t *);$/;"	prototype	line:466	signature:(const time_t *)	returns:_CRTIMP __cdecl __MINGW_NOTHROW wchar_t 
+_wctime	c:\MinGW\include\time.h	/^__CRT_ALIAS __cdecl __MINGW_NOTHROW  wchar_t *_wctime (const time_t *__v)$/;"	function	line:473	signature:(const time_t *__v)	returns:__CRT_ALIAS __cdecl __MINGW_NOTHROW wchar_t 
+wcsftime	c:\MinGW\include\time.h	/^size_t wcsftime (wchar_t *, size_t, const wchar_t *, const struct tm *);$/;"	prototype	line:496	signature:(wchar_t *, size_t, const wchar_t *, const struct tm *)	returns:_CRTIMP __cdecl __MINGW_NOTHROW size_t 
+__need_time_t	c:\MinGW\include\time.h	/^#undef __need_time_t$/;"	macro	line:504
+__need_struct_timespec	c:\MinGW\include\time.h	/^#undef __need_struct_timespec$/;"	macro	line:505
+__need_wchar_decls	c:\MinGW\include\time.h	/^#undef __need_wchar_decls$/;"	macro	line:506
