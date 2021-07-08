@@ -270,7 +270,6 @@ int main()
     if(ret != 0) printf("error\n");
     else printf("\ndiv2(3,4)\t: %0.2f\n", div(3,4));
     
-    
     printf("\nmlt(3,4)\t: %0.2f\n", mltp(3,4));
     return 0;
 }
